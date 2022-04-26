@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="915.0" prefWidth="1476.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EE364Project.FXMLmainController">
+   <children>
+      <TextArea fx:id="EfficiencyTextArea" layoutX="527.0" layoutY="753.0" prefHeight="25.0" prefWidth="416.0" promptText="                                 Phase 2 Efficiency Percentage">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="567.0" layoutY="23.0" prefHeight="40.0" prefWidth="342.0" text="KAU Transportaion System" textAlignment="CENTER" textFill="#37793d">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="531.0" layoutY="88.0" text="Number of Days">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="652.0" layoutY="85.0" prefHeight="32.0" prefWidth="178.0" text="Number of Busses" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField id="NumDays" fx:id="NumberOfDays" layoutX="542.0" layoutY="118.0" prefHeight="30.0" prefWidth="106.0" promptText="Tested Days">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="NumBusses" fx:id="NumberOfBusses" layoutX="694.0" layoutY="118.0" prefHeight="30.0" prefWidth="106.0" promptText="Tested Busses">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="NumStudents" fx:id="NumberOfStudents" layoutX="862.0" layoutY="118.0" prefHeight="30.0" prefWidth="106.0" promptText="Ex: 17,5,62,3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button id="DaySummaryButton" fx:id="SummaryDayButton" layoutX="1245.0" layoutY="129.0" mnemonicParsing="false" onAction="#SummaryDayButtonPopUp" prefHeight="30.0" prefWidth="203.0" text="Show Day Summary">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="DaySummaryButton" fx:id="FlightButton" layoutX="1245.0" layoutY="162.0" mnemonicParsing="false" onAction="#flightNumberButton" prefHeight="30.0" prefWidth="203.0" text="Show Specific Flight">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="StartButton" fx:id="Start" layoutX="604.0" layoutY="159.0" mnemonicParsing="false" onAction="#start" prefHeight="39.0" prefWidth="269.0" text="START" textFill="#14a634">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <SepiaTone level="0.08" />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="811.0" layoutY="84.0" prefHeight="30.0" prefWidth="195.0" text="Number of Students">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button id="ExportButtonP1" fx:id="ExportPhase1Button" layoutX="1332.0" layoutY="59.0" mnemonicParsing="false" onAction="#ExportPhase1" text="Export Phase1 TXT" />
+      <Button id="ExportButtonP2" fx:id="ExportPhase2Button" layoutX="1332.0" layoutY="88.0" mnemonicParsing="false" onAction="#ExportPhase2" text="Export Phase2 TXT" />
+      <TextArea fx:id="ReportTextAreaPhase1" layoutX="21.0" layoutY="206.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="542.0" prefWidth="712.0" promptText="Phase 1 Report" />
+      <TextArea fx:id="TotalSummaryPhase1" layoutX="23.0" layoutY="796.0" prefHeight="107.0" prefWidth="712.0" />
+      <Button id="DaySummaryButton" fx:id="SearchIDButton" layoutX="23.0" layoutY="168.0" mnemonicParsing="false" onAction="#SearchIDButtonPopUp" prefHeight="30.0" prefWidth="185.0" text="Search Student By ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ReportTextAreaPhase2" layoutX="737.0" layoutY="206.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseDragOver="#Katchup" prefHeight="542.0" prefWidth="712.0" promptText="Phase 2 Report" />
+      <TextArea fx:id="TotalSummaryPhase2" layoutX="737.0" layoutY="796.0" prefHeight="107.0" prefWidth="712.0" />
+      <Label layoutX="296.0" layoutY="756.0" prefHeight="31.0" prefWidth="164.0" text="Summary Phase1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1021.0" layoutY="756.0" prefHeight="31.0" prefWidth="164.0" text="Summary Phase2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="OpenAboutButton" layoutX="1397.0" layoutY="31.0" mnemonicParsing="false" onAction="#About" text="About" />
+      <Button contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#Katchup">
+         <graphic>
+            <ImageView fx:id="Katchup" fitHeight="144.0" fitWidth="176.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@KATCHUP.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="113.0" fitWidth="114.0" layoutX="36.0" layoutY="12.0" onDragEntered="#Katchup" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@KAU.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
