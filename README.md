@@ -33,8 +33,6 @@ We plan to simulate both the current system and our proposed solution to compare
 | `org.openjfx`       | `javafx-controls`          | `17.0.1`   |
 | `org.openjfx`       | `javafx-fxml`              | `17.0.1`   |
 | `org.kordamp.boot`  | `bootstrapfx-core`         | `0.4.0`    |
-| `org.junit.jupiter` | `junit-jupiter-api`        | `${junit.version}` |
-| `org.junit.jupiter` | `junit-jupiter-engine`     | `${junit.version}` |
 
 # How to use ( GUI )
 
