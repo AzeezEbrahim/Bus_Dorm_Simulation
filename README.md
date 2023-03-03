@@ -1,4 +1,4 @@
-# EE364Project
+# Bus_Dorm_Simulation
 
 # Introduction
 
